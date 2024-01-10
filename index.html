@@ -14,7 +14,7 @@
             font-family: Arial, sans-serif;
             background-color: white; /* Set the background to white */
             color: black; /* Text color for better visibility on white background */
-            padding-top: 150px; /* Adjust content padding to accommodate the header */
+            padding-bottom: 100px; /* Adjust content padding to accommodate the footer */
         }
 
         header {
@@ -28,33 +28,21 @@
             z-index: 100; /* Ensure the header stays on top of other content */
         }
 
-        h1 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            margin-top: 10px; /* Moved Tokm Marketplace to the top */
-        }
-
-        .search-bar {
+        footer {
+            width: 100%;
+            height: 100px; /* Height of the footer */
+            background-color: #f0f0f0; /* Background color for the footer */
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            position: fixed;
+            bottom: 0;
+            z-index: 100; /* Ensure the footer stays at the bottom */
         }
 
-        input[type="text"] {
-            padding: 8px;
-            border-radius: 5px;
-            border: none;
-            margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-            padding: 8px 16px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            background-color: #fff;
-            color: #000;
+        footer img {
+            width: 150px; /* Adjust image width as needed */
+            margin: 0 10px; /* Adjust margin between images */
         }
     </style>
 </head>
@@ -70,10 +58,15 @@
 
     <div class="content">
         <div class="images">
-            <img src="image1.jpg" alt="Image 1">
+            <img src="photo1.png" alt="Image 1">
             <img src="image2.jpg" alt="Image 2">
         </div>
     </div>
+
+    <footer>
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+    </footer>
 </body>
 
 </html>
