@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.png'); /* Set background image */
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the body to the viewport height */
+}
+
+/* Header styles */
+.header {
+    background: linear-gradient(to bottom, #006400, #004d00); /* Dark green gradient */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Added position relative to contain the icon */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-title {
+    margin: 0;
+    font-size: 36px;
+}
+
+.small-text {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Home button */
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999; /* Ensure it's above other content */
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #004d00;
+    border: 1px solid #004d00;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #003a00;
+    border-color: #003a00;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px; /* Adjust as needed */
+}
+
+.photo {
+    width: 350px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Adjust spacing between images */
+    border: 2px solid black; /* Set default black border around photos */
+    transition: transform 0.3s ease; /* Adding transition for smooth hover effect */
+    border-radius: 10px; /* Make the photo borders round */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow behind the photos */
+}
+
+.photo:hover {
+    transform: scale(1.1); /* Enlarge the photo on hover */
+}
+
+.photo:nth-child(2) {
+    border: 2px solid transparent; /* Removing default border for the second photo */
+    animation: rainbowBorder 5s linear infinite; /* Apply rainbow border animation */
+}
+
+@keyframes rainbowBorder {
+    0% {
+        border-color: red;
+    }
+    14.28% {
+        border-color: orange;
+    }
+    28.56% {
+        border-color: yellow;
+    }
+    42.84% {
+        border-color: green;
+    }
+    57.12% {
+        border-color: blue;
+    }
+    71.4% {
+        border-color: indigo;
+    }
+    85.68% {
+        border-color: violet;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: #004d00; /* Dark green for the footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Moves the footer to the bottom */
+    width: 100%;
+}
