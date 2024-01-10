@@ -14,7 +14,7 @@
             font-family: Arial, sans-serif;
             background-color: white; /* Set the background to white */
             color: black; /* Text color for better visibility on white background */
-            padding-bottom: 100px; /* Adjust content padding to accommodate the footer */
+            padding-top: 200px; /* Adjust content padding to accommodate the header */
         }
 
         header {
@@ -28,9 +28,23 @@
             z-index: 100; /* Ensure the header stays on top of other content */
         }
 
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .content img {
+            width: 200px; /* Adjust image width as needed */
+            border-radius: 5px;
+        }
+
         footer {
             width: 100%;
-            height: 100px; /* Height of the footer */
+            height: 150px; /* Height of the footer */
             background-color: #f0f0f0; /* Background color for the footer */
             display: flex;
             justify-content: center;
@@ -57,15 +71,18 @@
     </header>
 
     <div class="content">
-        <div class="images">
-            <img src="photo1.png" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
-        </div>
+        <img src="photo1.png" alt="Photo 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
     </div>
 
     <footer>
-        <img src="image3.jpg" alt="Image 3">
-        <img src="image4.jpg" alt="Image 4">
+        <img src="image7.jpg" alt="Image 7">
+        <img src="image8.jpg" alt="Image 8">
+        <img src="image9.jpg" alt="Image 9">
     </footer>
 </body>
 
